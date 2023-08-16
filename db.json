@@ -1,37 +1,22 @@
 {
   "projects": [
     {
-      "name": "aaa",
-      "budget": "11",
+      "name": "projeto atualizado",
+      "budget": "1300000",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 0,
-      "services": [],
-      "id": 1
-    },
-    {
-      "name": "dasdsa",
-      "budget": "1231",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 2
-    },
-    {
-      "name": "aaaaaaa",
-      "budget": "112321",
-      "category": {
-        "id": "4",
-        "name": "Planejamento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 3
+      "cost": 1223,
+      "services": [
+        {
+          "name": "asaas",
+          "cost": "1223",
+          "descriptiom": "aasdsaa",
+          "id": "7bb5caaa-d781-44f2-ac0d-de72b8cc7bc7"
+        }
+      ],
+      "id": 5
     }
   ],
   "categories": [
