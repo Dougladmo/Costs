@@ -23,7 +23,7 @@ Costs é um gerenciador de custo de projetos e serviços.
 ## Instruções para rodar o backend
 
 ### Instalar o node Js
-### Com abrir terminal do node na pasta do projeto !!
+### abrir terminal do node na pasta do projeto !!
 ### Digitar no terminal o comando npm run backend.
 ### Pronto o banco de dados está funcionando no seu localhost porta 5000 !!
 
