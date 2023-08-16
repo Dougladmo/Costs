@@ -18,5 +18,5 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Costs é um gerenciador de custo de projetos e serviços.
 
-- [Acesse o projeto finalizado, online](https://dougladmo.github.io/Galleria/)
+- [Acesse o projeto finalizado, online](#)
 
