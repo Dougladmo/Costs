@@ -1,19 +1,19 @@
-import { useState, useEffect } from 'react'
-import Input from '../form/Input'
-import Select from '../form/Select'
-import SubmitButton from '../form/SubmitButton'
+import { useState, useEffect } from "react"
+import Input from "../form/Input"
+import Select from "../form/Select"
+import SubmitButton from "../form/SubmitButton"
 
-import styles from './ProjectForm.module.css'
+import styles from "./ProjectForm.module.css"
 
-function ProjectForm({ handleSubmit, projectData }) {
+function ProjectForm({ handleSubmit, projectData, btnText }) {
   const [project, setProject] = useState(projectData || {})
   const [categories, setCategories] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:5000/categories', {
-      method: 'GET',
+    fetch("http://localhost:5000/categories", {
+      method: "GET",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
     })
       .then((resp) => resp.json())
@@ -29,7 +29,7 @@ function ProjectForm({ handleSubmit, projectData }) {
 
   function handleChange(e) {
     setProject({ ...project, [e.target.name]: e.target.value })
-    console.log(project) 
+    console.log(project)
   }
 
   function handleCategory(e) {
@@ -50,7 +50,7 @@ function ProjectForm({ handleSubmit, projectData }) {
         name="name"
         placeholder="Insira o nome do projeto"
         handleOnChange={handleChange}
-        value={project.name ? project.name.id : ''}
+        value={project.name ? project.name.id : ""}
       />
       <Input
         type="number"
@@ -58,16 +58,16 @@ function ProjectForm({ handleSubmit, projectData }) {
         name="budget"
         placeholder="Insira o orçamento total"
         handleOnChange={handleChange}
-        value={project.budget ? project.budget.id : ''}
+        value={project.budget ? project.budget.id : ""}
       />
       <Select
         name="category_id"
         text="Selecione a categoria"
         options={categories}
         handleOnChange={handleCategory}
-        value={project.category ? project.category.id : ''}
+        value={project.category ? project.category.id : ""}
       />
-      <SubmitButton text='Criar Projeto' />
+      <SubmitButton text={btnText} />
     </form>
   )
 }
