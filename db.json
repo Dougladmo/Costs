@@ -17,6 +17,24 @@
         }
       ],
       "id": 5
+    },
+    {
+      "name": "projeto atualizado",
+      "budget": "1300000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 1223,
+      "services": [
+        {
+          "name": "asaas",
+          "cost": "1223",
+          "descriptiom": "aasdsaa",
+          "id": "7bb5caaa-d781-44f2-ac0d-de72b8cc7bc7"
+        }
+      ],
+      "id": 5
     }
   ],
   "categories": [
